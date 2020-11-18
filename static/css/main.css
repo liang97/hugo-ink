@@ -474,13 +474,14 @@ ul {
 .toc {
     position: fixed;
     top: 50%;
-    right: 10%;
-    width: 10%;
+    right: 2%;
+    width: 20%;
     transform: translateY(-50%);
     /*background-color: #f6f6f6;*/
     /*border: solid 1px #c9c9c9;*/
-    border-radius: 5px;
+    border-radius: 1rem;
     padding-bottom: 1rem;
+    overflow:auto;
 }
 
 .toc .page-header {
@@ -509,4 +510,14 @@ ul {
     background-color: #f6f6f6;
     color: var(--accent);
     border-left: solid 2px var(--accent);
+}
+
+/* Media Queries */
+@media (max-width: 1080px) {
+    main {
+        max-width: 100%;
+    }
+    .toc {
+        display: none;
+    }
 }
